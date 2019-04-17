@@ -44,7 +44,7 @@ public class ColorAnimation extends AppCompatActivity {
         mtext.animate().setDuration(1000).translationX(x).translationY(y).start();
        float random=new Random().nextInt(1000);
         float random2=new Random().nextInt(1000);
-        findViewById(R.id.redBlue).animate().setDuration(1000).translationX(random).translationY(random2).start();
+        findViewById(R.id.redBlue).animate().setDuration(1000).translationX(random).translationY(random2).rotationBy(12).start();
 myCanvasView.DrawALine(img,(int)x1,(int)y1,(int)x,(int)y);
 
         return super.onTouchEvent(event);

@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     public void ColorAnimation(View view) {
         startActivity(new Intent(MainActivity.this,ColorAnimation.class));
     }
-
+    public void Hinge(View view){
+        startActivity(new Intent(MainActivity.this,HingeEffect.class));
+    }
 
 }

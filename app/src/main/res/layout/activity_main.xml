@@ -14,6 +14,11 @@
          android:layout_height="wrap_content"
          android:text="@string/coloranimation"
          android:onClick="ColorAnimation"/>
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Hinge"
+         android:onClick="Hinge"/>
  </LinearLayout>
 
 </RelativeLayout>
