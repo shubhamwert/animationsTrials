@@ -19,6 +19,11 @@
          android:layout_height="wrap_content"
          android:text="Hinge"
          android:onClick="Hinge"/>
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Drag "
+         android:onClick="Drag"/>
  </LinearLayout>
 
 </RelativeLayout>

@@ -25,4 +25,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,HingeEffect.class));
     }
 
+    public void Drag(View view) {
+        startActivity(new Intent(MainActivity.this,Drag.class));
+
+    }
 }
