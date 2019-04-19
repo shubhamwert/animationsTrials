@@ -29,4 +29,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,Drag.class));
 
     }
+
+    public void Night(View view) {
+        startActivity(new Intent(MainActivity.this,NightLight.class));
+
+    }
 }
