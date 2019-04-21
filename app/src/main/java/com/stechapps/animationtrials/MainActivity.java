@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,NightLight.class));
 
     }
+
+    public void stager(View view) {
+        startActivity(new Intent(MainActivity.this,StagerLayoutTest.class));
+
+    }
 }
