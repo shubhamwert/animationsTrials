@@ -51,8 +51,8 @@ public class StagerLayoutTest extends AppCompatActivity {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 100);
         for(int i=0; i<5; i++){
             TextView t = new TextView(this);
-            t.setBackgroundColor(Color.RED);
-            t.setText("Hello "+i);
+            t.setBackgroundColor(Color.GRAY);
+            t.setText(String.format("Hello %d", i));
 
 
             t.setLayoutParams(params);

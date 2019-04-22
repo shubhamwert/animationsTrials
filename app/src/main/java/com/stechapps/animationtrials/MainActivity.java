@@ -39,4 +39,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,StagerLayoutTest.class));
 
     }
+
+    public void TypeWriter(View view) {
+        startActivity(new Intent(MainActivity.this,TypeWriter.class));
+
+    }
 }

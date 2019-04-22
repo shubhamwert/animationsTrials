@@ -41,6 +41,11 @@
             android:layout_height="wrap_content"
             android:text="Stagger"
             android:onClick="stager"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TypeWriter"
+            android:onClick="TypeWriter"/>
 
     </LinearLayout>
 
