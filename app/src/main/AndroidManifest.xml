@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TypeWriter"></activity>
+        <activity android:name=".RippleView"></activity>
+        <activity android:name=".TypeWriter" />
         <activity android:name=".StagerLayoutTest" />
         <activity android:name=".NightLight" />
         <activity android:name=".Drag" />

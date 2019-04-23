@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class TypeWriter extends AppCompatActivity {
     private TypeWriterView tw;
@@ -20,6 +21,7 @@ public class TypeWriter extends AppCompatActivity {
     public void startTyping(View view) {
         tw.setText("");
         tw.setCharacterDelay(150);
-        tw.animateText("OKay its working yeah");
+        EditText ed=findViewById(R.id.typrWriter_Enter_text);
+        tw.animateText(ed.getText().toString().trim());
     }
 }

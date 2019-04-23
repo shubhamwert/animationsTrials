@@ -44,4 +44,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this,TypeWriter.class));
 
     }
+
+    public void RippleView(View view){
+        startActivity(new Intent(MainActivity.this,RippleView.class));
+
+    }
+
+
 }

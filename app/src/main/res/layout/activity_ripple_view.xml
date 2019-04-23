@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RippleView">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/mripple"
+android:id="@+id/rippler"
+    android:text="@string/click_here_to_ripple"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="11dp"
+    android:layout_margin="12dp"
+    android:onClick="RipleIT"
+    android:backgroundTint="@android:color/holo_red_dark"
+
+    />
+</LinearLayout>
