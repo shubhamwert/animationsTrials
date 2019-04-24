@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:pew="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParralxUsingLibrary"><LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+        <com.fmsirvent.ParallaxEverywhere.PEWImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagesismine" />
+        <com.fmsirvent.ParallaxEverywhere.PEWTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@android:color/white"
+            pew:block_parallax_x="true"
+            pew:parallax_x="160dp"
+            pew:parallax_y="160dp"
+            pew:reverse="reverseY" />
+    </FrameLayout>
+</LinearLayout>
+</ScrollView>

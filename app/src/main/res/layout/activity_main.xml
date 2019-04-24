@@ -49,9 +49,33 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="ripple(simple)"
+            android:onClick="RippleView"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="parralx_library"
+            android:onClick="parralx_1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stagger"
+            android:onClick="stager"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TypeWriter"
+            android:onClick="TypeWriter"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="ripple"
             android:onClick="RippleView"/>
 
     </LinearLayout>
-
 </LinearLayout>

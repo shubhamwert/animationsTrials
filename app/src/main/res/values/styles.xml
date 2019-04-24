@@ -6,12 +6,11 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
-    <style name="mripple">
         <item name="android:colorControlHighlight">@color/sa_green_transparent</item>
 
     </style>
+
+
 
 
 </resources>
