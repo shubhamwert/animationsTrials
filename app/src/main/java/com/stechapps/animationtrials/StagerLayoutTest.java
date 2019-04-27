@@ -26,7 +26,10 @@ public class StagerLayoutTest extends AppCompatActivity {
         ObjectAnimator a2 = ObjectAnimator.ofFloat(null, View.SCALE_Y, 0, 1);
         ObjectAnimator a3 = ObjectAnimator.ofFloat(null, View.ALPHA, 0, 1);
         AnimatorSet animator=  new AnimatorSet();
-        animator.setStartDelay(0);
+
+        animator.playTogether(a1, a2, a3);
+
+
 
 
 
@@ -36,7 +39,7 @@ public class StagerLayoutTest extends AppCompatActivity {
         transition.setStagger(LayoutTransition.APPEARING, 1000);
         transition.setStagger(LayoutTransition.DISAPPEARING, 1000);
 
-        transition.setDuration(5000);
+        transition.setDuration(2000);
 
 
         l.setLayoutTransition(transition);

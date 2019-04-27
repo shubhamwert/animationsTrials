@@ -2,39 +2,35 @@ package com.stechapps.animationtrials;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ClipData;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.DragEvent;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.RelativeLayout;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 
-import com.stechapps.animationtrials.Utills.MyDragListener;
+public class OnDragShow extends AppCompatActivity implements View.OnDragListener {
+    FrameLayout fm;
+    TextView textView;
 
-public class Drag extends AppCompatActivity implements View.OnDragListener {
-String TAG="MAin ACtivity";
 
-    private android.widget.RelativeLayout.LayoutParams layoutParams;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drag);
-        findViewById(R.id.img1).setOnTouchListener(new MyDragListener());
-        findViewById(R.id.img1).setOnDragListener(this);
+        setContentView(R.layout.activity_on_drag_show);
+        fm=findViewById(R.id.revealText);
+        textView = findViewById(R.id.textreveal);
+
+
     }
 
     @Override
     public boolean onDrag(View v, DragEvent event) {
-        RelativeLayout rr=findViewById(R.id.rr_lay);
-
-        int x_cord,y_cord;
-
+        String TAG = "ON Drag show";
         switch (event.getAction()){
 
             case DragEvent.ACTION_DRAG_STARTED:
                 Log.d(TAG, "onDrag: Started");
-                rr.removeViewAt(0);
                 break;
             case DragEvent.ACTION_DRAG_ENTERED:
                 Log.d(TAG, "onDrag: Entered");
@@ -42,17 +38,11 @@ String TAG="MAin ACtivity";
             case DragEvent.ACTION_DRAG_EXITED:
                 Log.d(TAG, "onDrag: Exited");
 
-
                 break;
             case DragEvent.ACTION_DRAG_ENDED:
-
-                x_cord = (int) event.getX();
-                y_cord = (int) event.getY();
-                Log.d(TAG, "onDrag: Ended  "+x_cord+  " ");
-                rr.addView(v,0);
-
-
-
+                v.setX(event.getX());
+                v.setY(event.getY());
+                Log.d(TAG, "onDrag: Ended"+event.getX());
 
                 break;
             case DragEvent.ACTION_DROP:                Log.d(TAG, "onDrag: Drop");
@@ -64,5 +54,4 @@ String TAG="MAin ACtivity";
         }
         return false;
     }
-
 }

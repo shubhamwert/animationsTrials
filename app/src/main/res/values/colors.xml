@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="sa_green_transparent">#D20AFC</color>
+    <color name="light_gray">#11DDDDDD</color>
 </resources>
