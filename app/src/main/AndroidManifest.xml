@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OnDragShow"></activity>
+        <activity android:name=".SliceTheWordActivity"></activity>
+        <activity android:name=".OnDragShow" />
         <activity android:name=".ParralxUsingLibrary" />
         <activity android:name=".RippleView" />
         <activity android:name=".TypeWriter" />

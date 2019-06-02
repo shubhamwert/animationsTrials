@@ -54,4 +54,7 @@ public class MainActivity extends AppCompatActivity {
     public void parralx_1(View view) {
         startActivity(new Intent(MainActivity.this,ParralxUsingLibrary.class));
     }
+    public void Slicer(View view) {
+        startActivity(new Intent(MainActivity.this,SliceTheWordActivity.class));
+    }
 }

@@ -5,8 +5,6 @@ import android.os.Build;
 import android.view.MotionEvent;
 import android.view.View;
 
-import androidx.annotation.RequiresApi;
-
 public class MyDragListener implements View.OnTouchListener {
 
     public boolean onTouch(View view, MotionEvent motionEvent) {

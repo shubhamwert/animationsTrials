@@ -64,8 +64,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stagger"
-            android:onClick="stager"/>
+            android:text="SliceTheWord"
+            android:onClick="Slicer"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
