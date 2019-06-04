@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SliceTheWordActivity"></activity>
+        <activity android:name=".samplePhysics"></activity>
+        <activity android:name=".SliceTheWordActivity" />
         <activity android:name=".OnDragShow" />
         <activity android:name=".ParralxUsingLibrary" />
         <activity android:name=".RippleView" />
@@ -30,5 +31,8 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
 
 </manifest>

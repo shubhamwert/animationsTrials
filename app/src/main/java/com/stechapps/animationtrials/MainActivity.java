@@ -57,4 +57,7 @@ public class MainActivity extends AppCompatActivity {
     public void Slicer(View view) {
         startActivity(new Intent(MainActivity.this,SliceTheWordActivity.class));
     }
+    public void Sample(View view) {
+        startActivity(new Intent(MainActivity.this,samplePhysics.class));
+    }
 }
