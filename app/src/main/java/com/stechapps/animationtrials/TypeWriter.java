@@ -22,6 +22,6 @@ public class TypeWriter extends AppCompatActivity {
         tw.setText("");
         tw.setCharacterDelay(150);
         EditText ed=findViewById(R.id.typrWriter_Enter_text);
-        tw.animateText(ed.getText().toString().trim());
+        tw.WriteText(ed.getText().toString().trim());
     }
 }
